@@ -1,2 +1,2 @@
 # eri-intro
-AgResearch eResearch Infrastrutuer Demo
+AgResearch eResearch Infrastruture Demo
