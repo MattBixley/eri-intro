@@ -4,5 +4,14 @@
   },
   "about.qmd": {
     "about.html": "9530f6aa"
+  },
+  "slurm.qmd": {
+    "slurm.html": "4dacf396"
+  },
+  "jobs.qmd": {
+    "jobs.html": "564b9c16"
+  },
+  "cluster.qmd": {
+    "cluster.html": "f5cb11b0"
   }
 }

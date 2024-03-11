@@ -5,12 +5,16 @@ website:
   title: "eRI Open Forum"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-      - cluster.qmd
-      - jobs.qmd
-      - slurm.qmd
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Cluster"
+        href: cluster.qmd
+      - text: "Jobs"
+        href: jobs.qmd
+      - text: "Slurm"
+        href: slurm.qmd
 
 format:
   html:

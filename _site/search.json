@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "slurm.html",
+    "href": "slurm.html",
+    "title": "Slurm",
+    "section": "",
+    "text": "Some helpful slurm commands to see how your job ran or what is happening on the cluster.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "jobs.html",
+    "href": "jobs.html",
+    "title": "Jobs",
+    "section": "",
+    "text": "Submitting jobs, requirements\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "cluster.html",
+    "href": "cluster.html",
+    "title": "Cluster",
+    "section": "",
+    "text": "Cluster setup and resources available\n\n1 + 1\n\n[1] 2"
   }
 ]
