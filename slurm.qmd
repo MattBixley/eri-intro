@@ -1,0 +1,9 @@
+---
+title: "Slurm"
+---
+
+Some helpful slurm commands to see how your job ran or what is happening on the cluster. 
+
+```{r}
+1 + 1
+```
