@@ -2,6 +2,8 @@
 title: "Cluster"
 ---
 
+Update\
+\
 Cluster setup and the resources available. General information about the cluster and differences between, Legacy/eRI/NeSI can be found at [Differences](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010494465/Differences+in+Platforms)
 
 OIn the custer, the `sinfo` command can show the current state of each node.\
