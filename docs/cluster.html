@@ -144,7 +144,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Cluster setup and the resources available. General information about the cluster and differences between, Legacy/eRI/NeSI can be found at <a href="https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010494465/Differences+in+Platforms">Differences</a></p>
+<p>Update<br>
+<br>
+Cluster setup and the resources available. General information about the cluster and differences between, Legacy/eRI/NeSI can be found at <a href="https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010494465/Differences+in+Platforms">Differences</a></p>
 <p>OIn the custer, the <code>sinfo</code> command can show the current state of each node.<br>
 <br>
 S:C:T means, sockets, cores and threads and CPUS = S*C*T and gvies the number of possible tasks for that node.<br>
@@ -269,7 +271,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/MattBixley\.github\.io\/eri-intro\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
