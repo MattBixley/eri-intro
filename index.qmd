@@ -4,7 +4,7 @@ title: "Home"
 
 This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+[AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)
 
 ```{r}
 1 + 1
