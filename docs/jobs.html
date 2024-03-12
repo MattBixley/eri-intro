@@ -147,26 +147,33 @@ ul.task-list li input[type="checkbox"] {
 <p>Submitting jobs, requirements, fairshare</p>
 <section id="creating-a-batch-script" class="level4">
 <h4 class="anchored" data-anchor-id="creating-a-batch-script"><strong>Creating a batch script</strong></h4>
-<pre><code>#!/bin/bash -e 
+<blockquote class="blockquote">
+<pre style="color: darkgrey"><code>#!/bin/bash -e 
 #SBATCH --job-name=SerialJob # job name (shows up in the queue) 
 #SBATCH --account=2024-mjb-sandbox # project to record usage against 
 #SBATCH --time=00:01:00 # Walltime (days-HH:MM:SS) 
 #SBATCH --mem=512MB # Memory in MB or GB
 
 pwd # Prints working directory</code></pre>
+</blockquote>
 </section>
 <section id="submitting" class="level4">
 <h4 class="anchored" data-anchor-id="submitting"><strong>Submitting</strong></h4>
-<pre><code>sbatch myjob.sl</code></pre>
+<blockquote class="blockquote">
+<pre style="color: darkgrey"><code>sbatch myjob.sl</code></pre>
+</blockquote>
 </section>
 <section id="interactive-jobs" class="level4">
 <h4 class="anchored" data-anchor-id="interactive-jobs"><strong>Interactive Jobs</strong></h4>
-<pre><code>srun --cpus-per-task 2 --account 2024-mjb-sandbox --mem6G -p compute --time 01:00:00 --pty bash--partition compute</code></pre>
+<blockquote class="blockquote">
+<pre style="color: darkgrey"><code>srun --cpus-per-task 2 --account 2024-mjb-sandbox --mem6G -p compute --time 01:00:00 --pty bash--partition compute</code></pre>
+</blockquote>
 </section>
 <section id="job-efficiency" class="level4">
 <h4 class="anchored" data-anchor-id="job-efficiency">Job Efficiency</h4>
 <p>Inefficient Memory usage that allows 4 Jobs per node</p>
-<pre><code>login-0 ~ $ seff 391751
+<blockquote class="blockquote">
+<pre style="color: darkgrey"><code>login-0 ~ $ seff 391751
 
 Job ID: 394314 
 Array Job ID: 391751_28 
@@ -179,8 +186,10 @@ CPU Efficiency: 76.80% of 103-06:03:12
 core-walltime Job Wall-clock time: 3-05:26:21
 Memory Utilized: 25.34 GB 
 Memory Efficiency: 9.90% of 256.00 GB</code></pre>
+</blockquote>
 <p>Similar Job - efficient memory request, would allow for 8 Job per node.</p>
-<pre><code>login-0 ~ $ seff 401588
+<blockquote class="blockquote">
+<pre style="color: darkgrey"><code>login-0 ~ $ seff 401588
 Job ID: 432626
 Array Job ID: 401588
 Cluster: eri
@@ -193,15 +202,18 @@ CPU Efficiency: 82.98% of 45-16:52:48 core-walltime
 Job Wall-clock time: 1-10:16:39
 Memory Utilized: 27.16 GB
 Memory Efficiency: 84.86% of 32.00 GB</code></pre>
+</blockquote>
 </section>
 <section id="fairshare" class="level4">
 <h4 class="anchored" data-anchor-id="fairshare">Fairshare</h4>
 <p>Relative use of the cluster. Everyone is assumed to have an equal proportion of the cluster or and equal right to use it. If you use a lot more than everyone else you Fairshare will decrease and you job priority will decrease relative to others. That decays over time (~1 week)<br>
 </p>
-<pre><code>login-0 ~ $ sshare -U
+<blockquote class="blockquote">
+<pre style="color: darkgrey"><code>login-0 ~ $ sshare -U
 Account                    User  RawShares  NormShares    RawUsage  EffectvUsage  FairShare 
 -------------------- ---------- ---------- ----------- ----------- ------------- ---------- 
 2023-nesi_slurm_tes+ bixleym@a+     parent    0.038462        3400      0.251494   0.788462 </code></pre>
+</blockquote>
 
 
 </section>
