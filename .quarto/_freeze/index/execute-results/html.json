@@ -1,7 +1,8 @@
 {
-  "hash": "ade3f7ae1d602d860ed62b829fd95e68",
+  "hash": "9fb6107b168af8a7514d3841fbd6d701",
   "result": {
-    "markdown": "---\ntitle: \"Home\"\n---\n\n\nThis is a Quarto website.\n\n[AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Home\"\n---\n\n\nThis is a Quarto website.\n\n[AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
