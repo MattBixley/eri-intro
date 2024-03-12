@@ -4,6 +4,46 @@ title: "Jobs"
 
 Submitting jobs, requirements
 
-```{r}
-1 + 1
+#### **Creating a batch script**
+
+```{#!/bin/bash -e}
+#SBATCH --job-name=SerialJob        # job name (shows up in the queue)
+#SBATCH --account=2024-mjb-sandbox  # project to record usage against
+#SBATCH --time=00:01:00             # Walltime (days-HH:MM:SS)
+#SBATCH --mem=512MB                 # Memory in MB or GB
+
+pwd # Prints working directory
+```
+
+#### **Submitting**
+
+```         
+sbatch myjob.sl
+```
+
+#### **Interactive Jobs**
+
+```         
+srun --cpus-per-task 2 --account 2024-mjb-sandbox --mem \
+  6G -p compute --time 01:00:00 --pty bash \
+  --partition compute
+```
+
+#### Job Efficiency
+
+```         
+login-0 ~ $ seff 391751_28
+
+  Job ID: 394314
+  Array Job ID: 391751_28
+  Cluster: eri
+  User/Group: bixleym@agresearch.co.nz/bixleym@agresearch.co.nz
+  State: COMPLETED (exit code 0)
+  Nodes: 1
+  Cores per node: 32
+  CPU Utilized: 79-07:10:55
+  CPU Efficiency: 76.80% of 103-06:03:12 core-walltime
+  Job Wall-clock time: 3-05:26:21
+  Memory Utilized: 25.34 GB
+  Memory Efficiency: 9.90% of 256.00 GB
 ```

@@ -18,7 +18,7 @@ website:
 
 format:
   html:
-    theme: slate
+    theme: zephyr
     css: styles.css
     toc: true
 

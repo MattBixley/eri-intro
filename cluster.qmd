@@ -4,7 +4,7 @@ title: "Cluster"
 
 Cluster setup and resources available
 
-```
+```         
 login-0 ~ $ sinfo
 PARTITION AVAIL JOB_SIZE  TIMELIMIT   CPUS  S:C:T   NODES STATE      NODELIST
 compute*  up    1-infini 14-00:00:0    256 2:64:2       2 mixed      compute-[0,5]
@@ -18,8 +18,7 @@ interacti up    1-infini 60-00:00:0      8  8:1:1       2 idle       interactive
 vgpu      up    1-infini 60-00:00:0     32 32:1:1       4 idle       vgpu-[0-3]
 ```
 
-
-```
+```         
 login-0 ~ $ ninfo
 NODELIST            CPU_LOAD            CPUS(A/I/O/T)       FREE_MEM            ALLOCMEM            MEMORY              
 compute-0           0.29                18/238/0/256        978099              146072              980163              

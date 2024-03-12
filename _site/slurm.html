@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -69,10 +35,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -178,14 +144,130 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Some helpful slurm commands to see how your job ran or what is happening on the cluster.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="slurm" class="level4">
+<h4 class="anchored" data-anchor-id="slurm">Slurm</h4>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>sbatch</td>
+<td><code>sbatch submit.sl</code></td>
+<td>Submits the Slurm script <a href="http://submit.sl/" title="http://submit.sl"><em>submit.sl</em></a></td>
+</tr>
+<tr class="even">
+<td>squeue</td>
+<td><p><code>squeue</code></p>
+<p><code>squeue --me</code></p>
+<p><code>squeue -p compute</code></p></td>
+<td><p>Displays entire queue.</p>
+<p>Displays your queued jobs.</p>
+<p>Displays queued jobs on the&nbsp;<em>compute</em> partition.</p></td>
+</tr>
+<tr class="odd">
+<td>sacct</td>
+<td><p><code>sacct</code></p>
+<p><code>sacct -S 2024-01-01</code></p>
+<p><code>sacct -j 123456</code></p></td>
+<td><p>Displays all the jobs run by you that day.</p>
+<p>Displays all the jobs run by you since the <em>1st Jan 2024</em></p>
+<p>Displays job <em>123456</em></p></td>
+</tr>
+<tr class="even">
+<td>scancel</td>
+<td><p><code>scancel&nbsp;123456</code></p>
+<p><code>scancel --me</code></p></td>
+<td><p>Cancels job <em>123456</em></p>
+<p>Cancels all your jobs.</p></td>
+</tr>
+<tr class="odd">
+<td>sshare</td>
+<td><code>sshare -U</code></td>
+<td>Shows the Fair Share scores for all projects of which&nbsp;<em>you</em>&nbsp;are a member.</td>
+</tr>
+<tr class="even">
+<td>sinfo</td>
+<td><code>sinfo</code></td>
+<td>Shows the current state of the Slurm partitions.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sbatch" class="level4">
+<h4 class="anchored" data-anchor-id="sbatch">sbatch</h4>
+<table class="table">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 35%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>–job-name</td>
+<td><code>#SBATCH --job-name=MyJob</code></td>
+<td>The name that will appear when using squeue or sacct</td>
+</tr>
+<tr class="even">
+<td>–account</td>
+<td><code>#SBATCH --account=2024-mjb-sandbox</code></td>
+<td>The account that usage will be recorded for.</td>
+</tr>
+<tr class="odd">
+<td>–time</td>
+<td><code>#SBATCH --time=DD-HH:MM:SS</code></td>
+<td>Job max walltime<br>
+</td>
+</tr>
+<tr class="even">
+<td>–mem</td>
+<td><code>#SBATCH --mem=512MB</code></td>
+<td>Memory required per node.</td>
+</tr>
+<tr class="odd">
+<td>–partition</td>
+<td><code>#SBATCH --partition=compute</code></td>
+<td>Specified job partition</td>
+</tr>
+<tr class="even">
+<td>–output</td>
+<td><code>#SBATCH --output=%j_output.out</code></td>
+<td>Standard output file.</td>
+</tr>
+<tr class="odd">
+<td>–mail-user</td>
+<td><code>#SBATCH --mail-user=matt.bixley@agresearch.co.nz</code></td>
+<td>Address to send mail notifications.</td>
+</tr>
+<tr class="even">
+<td>–mail-type</td>
+<td><p><code>#SBATCH --mail-type=ALL</code></p>
+<p><code>#SBATCH --mail-type=TIME_LIMIT_80</code></p></td>
+<td><p>Will send a mail notification at <code>BEGIN END FAIL</code></p>
+<p>Will send message at <em>80%</em> walltime</p></td>
+</tr>
+<tr class="odd">
+<td>–no-requeue</td>
+<td><code>#SBATCH --no-requeue</code><br>
+</td>
+<td>Will stop job being requeued in the case of node failure.</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

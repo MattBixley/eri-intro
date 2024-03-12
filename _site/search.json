@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is a Quarto website.\nAgResearch eResearch Infrastructure\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "about.html",
@@ -18,14 +18,14 @@
     "href": "slurm.html",
     "title": "Slurm",
     "section": "",
-    "text": "Some helpful slurm commands to see how your job ran or what is happening on the cluster.\n\n1 + 1\n\n[1] 2"
+    "text": "Some helpful slurm commands to see how your job ran or what is happening on the cluster.\n\nSlurm\n\n\n\nCommand\nExample\nDescription\n\n\n\n\nsbatch\nsbatch submit.sl\nSubmits the Slurm script submit.sl\n\n\nsqueue\nsqueue\nsqueue --me\nsqueue -p compute\nDisplays entire queue.\nDisplays your queued jobs.\nDisplays queued jobs on the compute partition.\n\n\nsacct\nsacct\nsacct -S 2024-01-01\nsacct -j 123456\nDisplays all the jobs run by you that day.\nDisplays all the jobs run by you since the 1st Jan 2024\nDisplays job 123456\n\n\nscancel\nscancel 123456\nscancel --me\nCancels job 123456\nCancels all your jobs.\n\n\nsshare\nsshare -U\nShows the Fair Share scores for all projects of which you are a member.\n\n\nsinfo\nsinfo\nShows the current state of the Slurm partitions.\n\n\n\n\n\nsbatch\n\n\n\n\n\n\n\n\nCommand\nExample\nDescription\n\n\n\n\n–job-name\n#SBATCH --job-name=MyJob\nThe name that will appear when using squeue or sacct\n\n\n–account\n#SBATCH --account=2024-mjb-sandbox\nThe account that usage will be recorded for.\n\n\n–time\n#SBATCH --time=DD-HH:MM:SS\nJob max walltime\n\n\n\n–mem\n#SBATCH --mem=512MB\nMemory required per node.\n\n\n–partition\n#SBATCH --partition=compute\nSpecified job partition\n\n\n–output\n#SBATCH --output=%j_output.out\nStandard output file.\n\n\n–mail-user\n#SBATCH --mail-user=matt.bixley@agresearch.co.nz\nAddress to send mail notifications.\n\n\n–mail-type\n#SBATCH --mail-type=ALL\n#SBATCH --mail-type=TIME_LIMIT_80\nWill send a mail notification at BEGIN END FAIL\nWill send message at 80% walltime\n\n\n–no-requeue\n#SBATCH --no-requeue\n\nWill stop job being requeued in the case of node failure."
   },
   {
     "objectID": "jobs.html",
     "href": "jobs.html",
     "title": "Jobs",
     "section": "",
-    "text": "Submitting jobs, requirements\n\n1 + 1\n\n[1] 2"
+    "text": "Submitting jobs, requirements\n\nCreating a batch script\n#SBATCH --job-name=SerialJob        # job name (shows up in the queue)\n#SBATCH --account=2024-mjb-sandbox  # project to record usage against\n#SBATCH --time=00:01:00             # Walltime (days-HH:MM:SS)\n#SBATCH --mem=512MB                 # Memory in MB or GB\n\npwd # Prints working directory\n\n\nSubmitting\nsbatch myjob.sl\n\n\nInteractive Jobs\nsrun --cpus-per-task 2 --account 2024-mjb-sandbox --mem \\\n  6G -p compute --time 01:00:00 --pty bash \\\n  --partition compute\n\n\nJob Efficiency\nlogin-0 ~ $ seff 391751_28\n\n  Job ID: 394314\n  Array Job ID: 391751_28\n  Cluster: eri\n  User/Group: bixleym@agresearch.co.nz/bixleym@agresearch.co.nz\n  State: COMPLETED (exit code 0)\n  Nodes: 1\n  Cores per node: 32\n  CPU Utilized: 79-07:10:55\n  CPU Efficiency: 76.80% of 103-06:03:12 core-walltime\n  Job Wall-clock time: 3-05:26:21\n  Memory Utilized: 25.34 GB\n  Memory Efficiency: 9.90% of 256.00 GB"
   },
   {
     "objectID": "cluster.html",
