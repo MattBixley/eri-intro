@@ -144,8 +144,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Cluster setup and resources available</p>
-<pre><code>login-0 ~ $ sinfo
+<p>Cluster setup and the resources available. General information about the cluster and differences between, Legacy/eRI/NeSI can be found at <a href="https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010494465/Differences+in+Platforms">Differences</a></p>
+<p>OIn the custer, the <code>sinfo</code> command can show the current state of each node.<br>
+<br>
+S:C:T means, sockets, cores and threads and CPUS = S*C*T and gvies the number of possible tasks for that node.<br>
+<br>
+The <code>interactive</code> and <code>vgpu</code> nodes are in the Open on Demand/Jupyter space and will eventually not be visible as a resource on the cluster, but we will use them for the Demo.</p>
+<blockquote class="blockquote">
+<pre style="color: darkgray"><code>login-0 ~ $ sinfo
 PARTITION AVAIL JOB_SIZE  TIMELIMIT   CPUS  S:C:T   NODES STATE      NODELIST
 compute*  up    1-infini 14-00:00:0    256 2:64:2       2 mixed      compute-[0,5]
 compute*  up    1-infini 14-00:00:0    256 2:64:2       1 allocated  compute-2
@@ -156,7 +162,10 @@ hugemem   up    1-infini 14-00:00:0    256 2:64:2       1 idle       hugemem-1
 interacti up    1-infini 60-00:00:0      8  8:1:1       1 mixed      interactive-0
 interacti up    1-infini 60-00:00:0      8  8:1:1       2 idle       interactive-[1-2]
 vgpu      up    1-infini 60-00:00:0     32 32:1:1       4 idle       vgpu-[0-3]</code></pre>
-<pre><code>login-0 ~ $ ninfo
+</blockquote>
+<p>More information about resources and the state of each node can be gained from the command <code>sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory</code></p>
+<blockquote class="blockquote">
+<pre style="color: darkgrey"><code>login-0 ~ $ sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory
 NODELIST            CPU_LOAD            CPUS(A/I/O/T)       FREE_MEM            ALLOCMEM            MEMORY              
 compute-0           0.29                18/238/0/256        978099              146072              980163              
 compute-1           0.02                0/256/0/256         1016984             0                   980163              
@@ -174,6 +183,7 @@ vgpu-0              0.00                0/32/0/32           446262              
 vgpu-1              0.00                0/32/0/32           446914              0                   428894              
 vgpu-2              0.00                0/32/0/32           446902              0                   428894              
 vgpu-3              0.03                0/32/0/32           446940              0                   428894              </code></pre>
+</blockquote>
 
 
 
@@ -259,7 +269,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/MattBixley\.github\.io\/eri-intro\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
