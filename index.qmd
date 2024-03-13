@@ -2,9 +2,9 @@
 title: "Home"
 ---
 
-A demo, building knowledge and open forum around how to get the best use out of the eRI Compute Cluster.
-
-####   Framework
+A demo, building knowledge and open forum around how to get the best use out of your eRI Compute Cluster. What we won't be covering is Jupyter/RStudio/Open on Demand.\
+\
+Framework
 
 -   Accessing
 
@@ -16,7 +16,7 @@ A demo, building knowledge and open forum around how to get the best use out of 
 
     -   Platform Differences
 
--   [Slurm](jobs.qmd)
+-   [Working](jobs.qmd)
 
     -   running jobs
 
@@ -28,12 +28,20 @@ A demo, building knowledge and open forum around how to get the best use out of 
 
 -   Discussion
 
+    -   Limits
+
+    -   Priorities
+
+    -   Reservations
+
 #### Resources
 
 Google Sheet -
 
 Support Pages - [AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)
 
-Slurm Guide - [Slurm](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010363404/Slurm+Reference+Guide)
+Slurm Guide - [Slurm Cheatsheet](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010363404/Slurm+Reference+Guide) & [Slurm Website](https://slurm.schedmd.com/documentation.html)
 
 Finding Software - [Modules](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2928115715/How+to+find+and+load+software+aka+modules)
+
+\
