@@ -44,7 +44,10 @@ Accessing
 
 #### Resources
 
-Google Sheet -
+Google Sheet - <https://docs.google.com/document/d/1K8-lpy0IsQ6TWerBXzk_dxURT5Mzja5Cv4elzPNiQF8/edit?usp=sharing>
+
+Getting Help - Via email: [support\@cloud.nesi.org.nz](mailto:support@cloud.nesi.org.nz "mailto:support@cloud.nesi.org.nz")\
+Via the support portal: [AgR eRI support portal](https://nznesi.atlassian.net/servicedesk/customer/portal/1/group/18 "https://nznesi.atlassian.net/servicedesk/customer/portal/1/group/18")
 
 Support Pages - [AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)
 
