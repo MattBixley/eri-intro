@@ -8,11 +8,15 @@ A demo, building knowledge and open forum around how to get the best use out of 
 
 -   Accessing
 
--   Cluster Setup
+    -   [How to get there](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2789834787/How+to+access+the+AgResearch+eRI+compute+cluster)
+
+    -   [Directories](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2712272946/Accessing+eRI+storage)
+
+-   [Cluster Setup](cluster.qmd)
 
     -   Platform Differences
 
--   Slurm
+-   [Slurm](jobs.qmd)
 
     -   running jobs
 
@@ -31,3 +35,5 @@ Google Sheet -
 Support Pages - [AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)
 
 Slurm Guide - [Slurm](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010363404/Slurm+Reference+Guide)
+
+Finding Software - [Modules](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2928115715/How+to+find+and+load+software+aka+modules)

@@ -1,5 +1,5 @@
 ---
-title: "Cluster"
+title: "Cluster Architecture"
 ---
 
 Cluster setup and the resources available. General information about the cluster and differences between, Legacy/eRI/NeSI can be found at [Differences](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010494465/Differences+in+Platforms)
@@ -46,3 +46,5 @@ More information about resources and the state of each node can be gained from t
 > vgpu-2              0.00                0/32/0/32           446902              0                   428894              
 > vgpu-3              0.03                0/32/0/32           446940              0                   428894              
 > ```
+
+#### Limits
