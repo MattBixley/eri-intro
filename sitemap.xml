@@ -2,22 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://MattBixley.github.io/eri-intro/cluster.html</loc>
-    <lastmod>2024-03-13T22:13:47.880Z</lastmod>
-  </url>
-  <url>
-    <loc>https://MattBixley.github.io/eri-intro/about.html</loc>
-    <lastmod>2024-03-13T22:13:47.880Z</lastmod>
-  </url>
-  <url>
-    <loc>https://MattBixley.github.io/eri-intro/jobs.html</loc>
-    <lastmod>2024-03-13T22:13:47.888Z</lastmod>
+    <lastmod>2024-03-13T22:16:48.130Z</lastmod>
   </url>
   <url>
     <loc>https://MattBixley.github.io/eri-intro/slurm.html</loc>
-    <lastmod>2024-03-13T22:13:47.888Z</lastmod>
+    <lastmod>2024-03-13T22:16:48.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MattBixley.github.io/eri-intro/jobs.html</loc>
+    <lastmod>2024-03-13T22:16:48.134Z</lastmod>
   </url>
   <url>
     <loc>https://MattBixley.github.io/eri-intro/index.html</loc>
-    <lastmod>2024-03-13T22:13:47.888Z</lastmod>
+    <lastmod>2024-03-13T22:16:48.134Z</lastmod>
   </url>
 </urlset>
