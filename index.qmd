@@ -4,10 +4,9 @@ title: "Home"
 
 A demo, building knowledge and open forum around how to get the best use out of your eRI Compute Cluster. What we won't be covering is Jupyter/RStudio/Open on Demand.\
 
-####  Outline
+#### Outline
 
-:::: {layout="\[ 40, 60 \]"}
-
+::: {layout="[ 40, 60 ]"}
 ::: {#first-column}
 Accessing
 
@@ -41,8 +40,7 @@ Accessing
 ::: {#second-column}
 ![](resources/High_Performance_Computing_Center_Stuttgart_HLRS_2015_07_Cray_XC40_Hazel_Hen_IO.jpg){width="100%"}
 :::
-
-::::
+:::
 
 #### Resources
 
