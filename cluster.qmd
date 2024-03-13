@@ -51,3 +51,6 @@ More information about resources and the state of each node can be gained from t
 > ```
 
 #### Limits
+
+Job Length - 2 Weeks\
+MEM - 2.5GB/cpu

@@ -7,31 +7,31 @@ Some helpful slurm commands to see how your job ran or what is happening on the 
 
 #### Slurm
 
-+-------------+-----------------------+---------------------------------------------------------------------------+
-| Command     | Example               | Description                                                               |
-+=============+=======================+===========================================================================+
-| sbatch      | `sbatch submit.sl`    | Submits the Slurm script *submit.sl*                                      |
-+-------------+-----------------------+---------------------------------------------------------------------------+
-| squeue      | `squeue`              | Displays entire queue.                                                    |
-|             |                       |                                                                           |
-|             | `squeue --me`         | Displays your queued jobs.                                                |
-|             |                       |                                                                           |
-|             | `squeue -p compute`   | Displays queued jobs on the *compute* partition.                          |
-+-------------+-----------------------+---------------------------------------------------------------------------+
-| sacct       | `sacct`               | Displays all the jobs run by you that day.                                |
-|             |                       |                                                                           |
-|             | `sacct -S 2024-01-01` | Displays all the jobs run by you since the *1st Jan 2024*                 |
-|             |                       |                                                                           |
-|             | `sacct -j 123456`     | Displays job *123456*                                                     |
-+-------------+-----------------------+---------------------------------------------------------------------------+
-| scancel     | `scancel 123456`      | Cancels job *123456*                                                      |
-|             |                       |                                                                           |
-|             | `scancel --me`        | Cancels all your jobs.                                                    |
-+-------------+-----------------------+---------------------------------------------------------------------------+
-| sshare      | `sshare -U`           | Shows the Fair Share scores for all projects of which *you* are a member. |
-+-------------+-----------------------+---------------------------------------------------------------------------+
-| sinfo       | `sinfo`               | Shows the current state of the Slurm partitions.                          |
-+-------------+-----------------------+---------------------------------------------------------------------------+
++---------+-----------------------+---------------------------------------------------------------------------+
+| Command | Example               | Description                                                               |
++=========+=======================+===========================================================================+
+| sbatch  | `sbatch submit.sl`    | Submits the Slurm script *submit.sl*                                      |
++---------+-----------------------+---------------------------------------------------------------------------+
+| squeue  | `squeue`              | Displays entire queue.                                                    |
+|         |                       |                                                                           |
+|         | `squeue --me`         | Displays your queued jobs.                                                |
+|         |                       |                                                                           |
+|         | `squeue -p compute`   | Displays queued jobs on the *compute* partition.                          |
++---------+-----------------------+---------------------------------------------------------------------------+
+| sacct   | `sacct`               | Displays all the jobs run by you that day.                                |
+|         |                       |                                                                           |
+|         | `sacct -S 2024-01-01` | Displays all the jobs run by you since the *1st Jan 2024*                 |
+|         |                       |                                                                           |
+|         | `sacct -j 123456`     | Displays job *123456*                                                     |
++---------+-----------------------+---------------------------------------------------------------------------+
+| scancel | `scancel 123456`      | Cancels job *123456*                                                      |
+|         |                       |                                                                           |
+|         | `scancel --me`        | Cancels all your jobs.                                                    |
++---------+-----------------------+---------------------------------------------------------------------------+
+| sshare  | `sshare -U`           | Shows the Fair Share scores for all projects of which *you* are a member. |
++---------+-----------------------+---------------------------------------------------------------------------+
+| sinfo   | `sinfo`               | Shows the current state of the Slurm partitions.                          |
++---------+-----------------------+---------------------------------------------------------------------------+
 
 #### sbatch
 
