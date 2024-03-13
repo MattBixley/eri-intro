@@ -32,7 +32,8 @@ website:
 format:
   html:
 #    theme: zephyr
-    theme: sketchy
+#    theme: sketchy
+    theme: morph
     css: styles.css
     toc: true
 

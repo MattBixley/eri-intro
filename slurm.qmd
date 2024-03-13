@@ -59,4 +59,4 @@ Some helpful slurm commands to see how your job ran or what is happening on the 
 | --no-requeue | `#SBATCH --no-requeue`\                            | Will stop job being requeued in the case of node failure. |
 +--------------+----------------------------------------------------+-----------------------------------------------------------+
 
-: {tbl-colwidths="\[20,250,450\]"}
+: {tbl-colwidths="\[100,350,450\]"}
