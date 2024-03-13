@@ -31,7 +31,8 @@ website:
 
 format:
   html:
-    theme: zephyr
+#    theme: zephyr
+    theme: sketchy
     css: styles.css
     toc: true
 
