@@ -7,6 +7,15 @@ execute:
 
 website:
   title: "eRI Open Forum"
+  repo-url: https://github.com/MattBixley/eri-intro
+  repo-actions: [edit, issue]
+  search: 
+    location: navbar
+    type: overlay
+  margin-header: |
+    ![](resources/AgResearch.png)
+  margin-footer: |
+    ![](resources/nesi.png)
   navbar:
     left:
       - text: "Home"

@@ -2,6 +2,32 @@
 title: "Home"
 ---
 
-This is a Quarto website.
+A demo, building knowledge and open forum around how to get the best use out of the eRI Compute Cluster.
 
-[AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)
+####   Framework
+
+-   Accessing
+
+-   Cluster Setup
+
+    -   Platform Differences
+
+-   Slurm
+
+    -   running jobs
+
+    -   do's and dont's
+
+    -   efficiency
+
+    -   fairshare
+
+-   Discussion
+
+#### Resources
+
+Google Sheet -
+
+Support Pages - [AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)
+
+Slurm Guide - [Slurm](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010363404/Slurm+Reference+Guide)
