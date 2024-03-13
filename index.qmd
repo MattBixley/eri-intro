@@ -3,14 +3,17 @@ title: "Home"
 ---
 
 A demo, building knowledge and open forum around how to get the best use out of your eRI Compute Cluster. What we won't be covering is Jupyter/RStudio/Open on Demand.\
-\
-Framework
 
--   Accessing
+####  Outline
 
-    -   [How to get there](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2789834787/How+to+access+the+AgResearch+eRI+compute+cluster)
+:::: {layout="\[ 40, 60 \]"}
 
-    -   [Directories](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2712272946/Accessing+eRI+storage)
+::: {#first-column}
+Accessing
+
+-   [How to get there](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2789834787/How+to+access+the+AgResearch+eRI+compute+cluster)
+
+-   [Directories](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2712272946/Accessing+eRI+storage)
 
 -   [Cluster Setup](cluster.qmd)
 
@@ -33,6 +36,13 @@ Framework
     -   Priorities
 
     -   Reservations
+:::
+
+::: {#second-column}
+![](resources/High_Performance_Computing_Center_Stuttgart_HLRS_2015_07_Cray_XC40_Hazel_Hen_IO.jpg){width="100%"}
+:::
+
+::::
 
 #### Resources
 
