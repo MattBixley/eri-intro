@@ -166,7 +166,9 @@ interacti up    1-infini 60-00:00:0      8  8:1:1       1 mixed      interactive
 interacti up    1-infini 60-00:00:0      8  8:1:1       2 idle       interactive-[1-2]
 vgpu      up    1-infini 60-00:00:0     32 32:1:1       4 idle       vgpu-[0-3]</code></pre>
 </blockquote>
-<p>More information about resources and the state of each node can be gained from the command <code>sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory</code></p>
+<p><img src="resources/clusterDiagram.png" class="img-fluid" style="width:100.0%"></p>
+<p>More information about resources and the state of each node can be gained from the command:<br>
+<code>sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory</code></p>
 <blockquote class="blockquote">
 <pre style="color: darkgrey"><code>login-0 ~ $ sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory
 NODELIST            CPU_LOAD            CPUS(A/I/O/T)       FREE_MEM            ALLOCMEM            MEMORY              

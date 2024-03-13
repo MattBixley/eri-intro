@@ -24,7 +24,10 @@ The `interactive` and `vgpu` nodes are in the Open on Demand/Jupyter space and w
 > vgpu      up    1-infini 60-00:00:0     32 32:1:1       4 idle       vgpu-[0-3]
 > ```
 
-More information about resources and the state of each node can be gained from the command `sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory`
+![](resources/clusterDiagram.png){width="100%"}
+
+More information about resources and the state of each node can be gained from the command:\
+`sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory`
 
 > ``` {style="color: darkgrey"}
 > login-0 ~ $ sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory
