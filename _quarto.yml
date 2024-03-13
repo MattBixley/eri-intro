@@ -20,8 +20,6 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "About"
-        href: about.qmd
       - text: "Cluster"
         href: cluster.qmd
       - text: "Jobs"

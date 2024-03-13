@@ -35,12 +35,11 @@ Accessing
 -   Google Sheet - <https://docs.google.com/document/d/1K8-lpy0IsQ6TWerBXzk_dxURT5Mzja5Cv4elzPNiQF8/edit?usp=sharing>
 -   Getting Help
     -   Via email: [support\@cloud.nesi.org.nz](mailto:support@cloud.nesi.org.nz "mailto:support@cloud.nesi.org.nz")
-
     -   Via the support portal: [AgR eRI support portal](https://nznesi.atlassian.net/servicedesk/customer/portal/1/group/18 "https://nznesi.atlassian.net/servicedesk/customer/portal/1/group/18")
 -   Support Pages - [AgResearch eResearch Infrastructure](https://nznesi.atlassian.net/wiki/spaces/eRI/overview?homepageId=2711650723)
 -   Slurm Guide - [Slurm Cheatsheet](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/3010363404/Slurm+Reference+Guide) & [Slurm Website](https://slurm.schedmd.com/documentation.html)
 -   Finding Software - [Modules](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2928115715/How+to+find+and+load+software+aka+modules)
 -   Status Page - <https://agresearcheri.statuspage.io/>
--   Current - <https://agresearcheri.statuspage.io/incidents/8w3pw64qw43s>
+    -   Current - <https://agresearcheri.statuspage.io/incidents/8w3pw64qw43s>
 
 \
