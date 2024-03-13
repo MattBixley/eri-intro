@@ -32,6 +32,6 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "This is a Quarto website.\nAgResearch eResearch Infrastructure"
+    "text": "A demo, building knowledge and open forum around how to get the best use out of the eRI Compute Cluster.\n\nFramework\n\nAccessing\nCluster Setup\n\nPlatform Differences\n\nSlurm\n\nrunning jobs\ndo’s and dont’s\nefficiency\nfairshare\n\nDiscussion\n\n\n\nResources\nGoogle Sheet -\nSupport Pages - AgResearch eResearch Infrastructure\nSlurm Guide - Slurm"
   }
 ]
