@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "A demo, building knowledge and open forum around how to get the best use out of your eRI Compute Cluster. What we won’t be covering is Jupyter/RStudio/Open on Demand.\n\nFramework\n\nAccessing\n\nHow to get there\nDirectories\n\nCluster Setup\n\nPlatform Differences\n\nWorking\n\nrunning jobs\ndo’s and dont’s\nefficiency\nfairshare\n\nDiscussion\n\nLimits\nPriorities\nReservations\n\n\n\nResources\nGoogle Sheet -\nSupport Pages - AgResearch eResearch Infrastructure\nSlurm Guide - Slurm Cheatsheet & Slurm Website\nFinding Software - Modules"
+    "text": "A demo, building knowledge and open forum around how to get the best use out of your eRI Compute Cluster. What we won’t be covering is Jupyter/RStudio/Open on Demand.\n\nFramework\n\nAccessing\n\nHow to get there\nDirectories\n\nCluster Setup\n\nPlatform Differences\n\nWorking\n\nrunning jobs\ndo’s and dont’s\nefficiency\nfairshare\n\nDiscussion\n\nLimits\nPriorities\nReservations\n\n\n\nResources\nGoogle Sheet -\nSupport Pages - AgResearch eResearch Infrastructure\nSlurm Guide - Slurm Cheatsheet & Slurm Website\nFinding Software - Modules\nStatus Page - https://agresearcheri.statuspage.io/\nCurrent - https://agresearcheri.statuspage.io/incidents/8w3pw64qw43s"
   },
   {
     "objectID": "about.html",
