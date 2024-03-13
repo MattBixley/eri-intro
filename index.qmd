@@ -44,4 +44,6 @@ Slurm Guide - [Slurm Cheatsheet](https://nznesi.atlassian.net/wiki/spaces/eRI/pa
 
 Finding Software - [Modules](https://nznesi.atlassian.net/wiki/spaces/eRI/pages/2928115715/How+to+find+and+load+software+aka+modules)
 
+Status Page - <https://agresearcheri.statuspage.io/>
+
 \
