@@ -29,6 +29,9 @@ The `interactive` and `vgpu` nodes are in the Open on Demand/Jupyter space and w
 More information about resources and the state of each node can be gained from the command:\
 `sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory`
 
+Or to see what's running use `squeue` or again for more detail you can use something like:\
+`squeue --format="%10i %20j %20a %15u %4T %.10M %.10L %R %.C %.m %w"`
+
 > ``` {style="color: darkgrey"}
 > login-0 ~ $ sinfo -N --Format=nodelist,cpusload,cpusState,FreeMem,AllocMem,Memory
 > NODELIST            CPU_LOAD            CPUS(A/I/O/T)       FREE_MEM            ALLOCMEM            MEMORY              
