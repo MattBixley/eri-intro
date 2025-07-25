@@ -25,7 +25,7 @@ Submitting jobs, requirements, fairshare
 #### **Interactive Jobs**
 
 > ``` {style="color: darkgrey"}
-> srun --cpus-per-task 2 --account 2024-mjb-sandbox --mem 6G -partition compute --time 01:00:00 --pty bash
+> srun --cpus-per-task 2 --account 2024-mjb-sandbox --mem 6G --partition compute --time 01:00:00 --pty bash
 > ```
 
 #### Job Efficiency
